@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Responsive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-container {
+      flex: 0 0 calc(33.33% - 20px);
+      margin: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .image-container {
+        flex: 0 0 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .image-container {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ATARDECER</h1>
+  <p>POR EL VERANO SE CAPTURARON IMPACTANTES ATARDECERES</p>
+  <p>---------------------------------------------------------</p>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="nubimg4.jpg" alt="Imagen 1">
+    </div>
+    <div class="image-container">
+      <img src="nubeimg4.jpg" alt="Imagen 2">
+    </div>
+    <div class="image-container">
+      <img src="nubeimg34.jpg" alt="Imagen 3">
+    </div>
+    <div class="image-container">
+      <img src="nubeimg44.jpg" alt="Imagen 4">
+    </div>
+    <div class="image-container">
+      <img src="nubeime54.jpg" alt="Imagen 5">
+    </div>
+    <div class="image-container">
+      <img src="nubeimg74.jpg" alt="Imagen 6">
+    </div>
+  </div>
+</body>
+</html>
